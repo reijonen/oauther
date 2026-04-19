@@ -1,0 +1,22 @@
+export type Config = {
+  auth0Domain: string;
+  auth0Audience: string;
+  resourceBaseUrl: string;
+  resourceMetadataUrl: string;
+  requiredScope: string;
+  requiredScopes: string[];
+  issuerUrl: string;
+  jwtClockSkewSeconds: number;
+  jwtHttpTimeoutMs: number;
+  jwtJwksCacheMaxAgeMs: number;
+  jwtJwksCooldownMs: number;
+  nodeMaxHttpHeaderSizeBytes: number;
+  authHeaderMaxBytes: number;
+  authDecisionTimeoutMs: number;
+  authDenyRateWindowMs: number;
+  authDenyRateMax: number;
+  httpHeadersTimeoutMs: number;
+  httpRequestTimeoutMs: number;
+  httpKeepAliveTimeoutMs: number;
+  listenPort: number;
+};
