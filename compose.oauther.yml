@@ -1,0 +1,13 @@
+services:
+  oauther:
+    build:
+      context: .
+    container_name: oauther
+    environment:
+      - AUTH0_DOMAIN=dev-a3w68vmul5xc13me.eu.auth0.com
+      - AUTH0_AUDIENCE=https://samulireijonen.com
+      - RESOURCE_BASE_URL=https://samulireijonen.com
+      - AUTH_REQUIRED_SCOPE=
+      - JWT_CLOCK_SKEW_SECONDS=60
+      - NODE_MAX_HTTP_HEADER_SIZE_BYTES=16384
+      - AUTH_HEADER_MAX_BYTES=8192
